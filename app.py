@@ -244,7 +244,7 @@ else:
         clean_df['Dataset Split'] = split_labels
         
         # UI Header & Progress
-        st.title("🧠 Neural Network Glass Box")
+        st.title("🧠 DIY Neural Networks")
         st.progress(st.session_state.step / 4.0)
 
 # --- STEP 1 UI ---
