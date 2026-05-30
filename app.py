@@ -3,8 +3,8 @@ import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
 import plotly.express as px
-from data_Pipeline import DataPipeline
-from Neural_network import GlassBoxNetwork
+from data_pipeline import DataPipeline
+from FNN import GlassBoxNetwork
 
 # --- PAGE SETUP & CUSTOM BACKGROUND ---
 st.set_page_config(page_title="DIY Neural Networks", layout="wide")
