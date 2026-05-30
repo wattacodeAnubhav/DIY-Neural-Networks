@@ -55,6 +55,23 @@ Run in your terminal- ' python generate_data.py '
 Run in your terminal- 
 ' streamlit run app.py '; ' python3 -m streamlit run app.py '
 
+---
+
+### 💻 System & Hardware Requirements
+
+This application bypasses standard pre-rendered static plots in favor of live, 60-FPS WebGL 3D rendering. To ensure the loss landscapes and geometric boundaries render without frame drops, the following system specifications are required:
+
+**Software Requirements:**
+* **Python:** Version 3.9 to 3.11.
+* **Browser:** A modern web browser with **Hardware Acceleration enabled** (Google Chrome, Microsoft Edge, Safari, or Firefox). WebGL 2.0 support is mandatory.
+
+**Hardware Recommendations:**
+* **CPU:** Multi-core processor (Intel i5 / AMD Ryzen 5 or equivalent Apple Silicon M-series) to handle rapid NumPy gradient descent iterations.
+* **Memory:** Minimum 8 GB RAM (16 GB recommended for seamless UI transitions during heavy epochs).
+* **Graphics (GPU):** While a dedicated GPU is not strictly required, a modern integrated graphics unit (e.g., Apple M1/M2/M3, Intel Iris Xe, or AMD Radeon Graphics) is highly recommended to compute the lighting, specular reflections, and translucent shading of the Plotly 3D Isosurfaces.
+
+---
+
 ## Repository Structure
 
 ```text
