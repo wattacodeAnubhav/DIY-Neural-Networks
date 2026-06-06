@@ -389,7 +389,7 @@ To solve complex, real-world problems, straight lines are not enough. We must pa
                 if problem_type == "Classification":
                     st.write("**Binary Cross-Entropy (BCE)**")
                     st.latex(r"\mathcal{L} = -\frac{1}{m} \sum_{i=1}^{m} \left[ y_i \log(\hat{y}_i) + (1-y_i) \log(1-\hat{y}_i) \right]")
-                    st.caption("BCE heavily penalizes the network if it is highly confident but mathematically wrong. The derivative passed backward to update the network simplifies elegantly to $\hat{y} - y$.")
+                    st.caption("BCE heavily penalizes the network if it is highly confident but mathematically wrong. The derivative passed backward to update the network simplifies elegantly to $\hat{y} - y$.(It provides a clean, mathematical slope that tells the network exactly how much to adjust its weights)")
                 else:
                     st.write("**Mean Squared Error (MSE)**")
                     st.latex(r"\mathcal{L} = \frac{1}{2m} \sum_{i=1}^{m} (\hat{y}_i - y_i)^2")
